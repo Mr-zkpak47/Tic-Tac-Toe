@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.square{
+  background-color: azure;
+  height: 50px;
+  width: 50px;
+  border: 1px solid gray;
+  outline: none;
+}
+
+.board{
+  border: 1px solid gray;
+  background-color: red;
+  gap: 0;
+  width: calc(50px * 3);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.board .flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px;
+}
+.board .flex .items{
+  height: 50px;
+  width: 50px;
+} */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background: #000033;
+  color: white;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.items {
+  width: 70px;
+  height: 70px;
+}
+.square {
+  width: 70px;
+  height: 70px;
+  border: none;
+  outline: none;
+  border: 1px solid #3d7bf4;
+  font-weight: bolder;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0b0d21;
+}
+.heading {
+  /* font-family: 'Orbitron', sans-serif; */
+  font-family: "Anton", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: lighter;
+  cursor: pointer;
+}
+.status {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 1px;
+  color: #3d7bf4;
+  font-size: 24px;
+}
+.winner{
+  font-family: 'Audiowide', cursive;
+  font-size: 32px; /* Adjust the font size as needed */
+  color: #00ffcc; /* Neon Green */
+}
+.btn{
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 1px;
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 250px) {
+  .items {
+    width: 50px;
+    height: 50px;
+  }
+  .square {
+    width: 50px;
+    height: 50px;
+  }
+  .status{
+    letter-spacing: 1px;
+    font-size: 80%;
+  }
+}
